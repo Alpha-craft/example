@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+    
+    .kotak{
+        width: 200px;
+        height: 200px;
+        background:linear-gradient(to right,#be0703,#81f5ff);
+        position: relative;
+        
+    }
+    .kotak:hover{
+        width: 200px;
+        height: 200px;
+        background-color: salmon;
+        animation: animasi 3s ease alternate forwards ;
+        position: relative;
+    }
+    @keyframes animasi{
+        0%{
+            width: 200px;
+            background:linear-gradient(to right,#be0703,#f0134d,#3fc5f0,#81f5ff);
+        }
+        
+        50%{
+            width: 500px;
+            height: 200px;
+            background:linear-gradient(to right,#be0703,#f0134d,#3fc5f0,#81f5ff);
+        }
+        75%{
+            width: 1000px;
+            height: 1000px;
+            background:linear-gradient(to right,#be0703,#f0134d,#3fc5f0,#81f5ff);
+        }
+        100%{
+            width: 500px;
+            height: 500px;
+            background:linear-gradient(to right,#be0703,#f0134d,#3fc5f0,#81f5ff);
+        }
+        
+
+
+    }
+    form{
+        padding: 50px 50px;
+        margin: 0 auto;
+        
+    }
+    </style>
+    <title>TRY.js</title>
+    <body>
+</head>
+  <form style="text-align: center;" class="kotak" action="">
+      <input style="background-color: rgba(255, 255, 255, 0.8);" type="text" placeholder="Nama">
+      <br>
+      <input style="background-color: rgba(255,255,255,0.4);" type="Password" placeholder="Password">
+      <br>
+      <button type="submit" onclick="">lOGIN</button>
+      <button type="reset">RE-SET</button>
+  </form>
+
+
+<!--    <script>
+    
+        var a= prompt("masukkan nama")
+        if(a=="Ainurahman"){
+            alert("selamat datang Ainurahman")
+        }
+        else if(a=="Rahman"){
+            alert("selamat datang Rahman")
+        }
+        else if(a=="ainurahman"){
+            alert("Selamat datang ainurahman")
+        }
+        else if(a=="rahman"){
+            alert("Selamat datang rahman")
+        }
+        else{
+            alert("kagak kenal sama lu")
+        }
+        var nama= prompt("masukkan nama anda")
+        var hasil= (nama=="Rahman" ? "dikenal" : "TIdak dikenal")
+        alert("Anda "+ hasil)
+  </script>
+-->
+</body>
+</html>
