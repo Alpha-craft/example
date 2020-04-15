@@ -49,10 +49,13 @@
         function waktu(){    
             const jam = document.querySelector(".tampilan")
             let time = new Date();
-            /* jam.textContent = time; */
+            /*jam.textContent = time;*/ 
             let detik = time.getSeconds();
             let min = time.getMinutes();
             let hr = time.getHours();
+            let yr = time.getUTCFullYear();
+            let bulan = time.getUTCMonth();
+            let tanggal = time.getUTCDate();
             if(detik <10 ){
                 detik = '0'+ detik
             }
@@ -62,8 +65,15 @@
             if(hr < 10){
                 hr = '0'+ hr
             }
+            if(bulan <10){
+                bulan = '0' +bulan
+            }
+            if(tanggal < 10){
+                tanggal = '0'+ tanggal
+            }
             /*alert(hr + "hr" + min +"min" +sec + "sec");*/
-            jam.textContent = hr + ":" + min + ":" + detik;
+            jam.textContent = yr+" "+bulan+" "+tanggal+"\n" + hr + ":" + min + ":" + detik+"\n";
+
         }
     </script>
 </body>
