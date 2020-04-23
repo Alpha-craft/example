@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <style>
+        *{
+            padding: 10px;
+            margin:0 auto;
+        }
+        body{
+            display: flex;
+        }
+        .hilang img{
+            height: 80%;
+            width: 60%;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            top: 50%;
+            left: 50%;   
+            right: 50%;
+            
+        }
+        .tampilkan img{
+            height: 80%;
+            width: 60%;
+            display: block;
+            justify-content: center;
+            align-items: center;
+    
+        }
+        .tampilkan{
+            display: none;
+        }
+        p{
+            text-align: center;
+            font-size: medium;
+            font-weight: 600;
+        }
+    </style>
+    <link rel="shortcut icon" type="images/png" href="pict/logo 1.2.png">
+    <title>Document</title>
+</head>
+<body>
+<div class="hilang">
+<img src="pict/Screenshot (1062).png"  alt=""> 
+<p>jangan Click aku </p>
+</div>
+<div class="tampilkan">
+<img src="pict/Screenshot (204).png" alt="">
+<p>Kenapa malah di Click !!!</p> 
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.hilang').click(function(){
+            $(this).fadeOut(-3000);
+        });
+    });
+    $('.hilang').click(function(){
+        $('.tampilkan').fadeIn(3000);
+  });
+  /*$("input").blur(function(){
+  alert("This input field has lost its focus.");
+});*/
+</script>
+</body>
+</html>
