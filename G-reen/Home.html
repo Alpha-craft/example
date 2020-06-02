@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: flex;
+            justify-content: center;
+            transform: translate(-50%,-50%);
+            display: none;
+        }
+        .fa-arrow-right{
+          color: silver;
+        }
+        
+    </style>  
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.bundle.js"></script>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title></title>
+</head>
+<body class="">
+<h1>Ya Ini maunya dibuat Halaman Homenya heheheh <br>Teri-teri daishouri</h1>
+
+<div class="nasgor">
+    
+    <div  id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="pict/1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item ">
+            <img class="d-block w-100" src="pict/2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="pict/3.jpg" alt="Third slide">
+            <div class="carousel-caption"><span class="tekan"><button class="btn btn-primary bg-transparant"><i class="fas fa-arrow-right"></i></button></span>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Mundur</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Maju</span>
+        </a>
+      </div>
+
+</div>
+</div>
+
+<script>
+    $(document).ready(function(){
+  $(".tekan").click(function(){
+    $(".nasgor").hide();
+    $("h1").show();
+  });
+});
+</script>
+</body>
+</html>
